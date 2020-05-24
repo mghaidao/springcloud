@@ -1,0 +1,17 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: cloud-pay-service
+  datasource:
+    url: jdbc:mysql://192.168.231.6:3306/springcloud?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
